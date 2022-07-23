@@ -1,0 +1,120 @@
+
+//------------------Color varible-----------------
+$green:rgb(73, 159, 122);
+$black:rgb(73, 59, 122);
+$paleOrange:#fbe0c3;
+$orange:#ffbb98;
+$grade:linear-gradient(120deg, hsl(263, 131%, 47%) 0%,hsl(263, 41%, 47%) 100%),;
+$grade1:linear-gradient(to bottom, hsl(263, 131%, 47%) 0%,hsl(263, 41%, 47%) 50%),rgb(73, 159, 122)100%;
+$gradeOrange:linear-gradient(120deg, #fbe0c3 0%,#ffbb98 100%);
+$gradeVerViolet:linear-gradient(10deg, #499f7a 0%,#493b7a 100%);
+
+html{
+    background-color: $green;
+}
+//------------------nav-bar-----------------
+nav{
+    background: $grade;
+    height: 10vw;
+    button{
+        height: 5vw;
+    }
+}
+//------------------background-color-----------------
+section{
+    background: linear-gradient(to bottom,hsl(163, 51%, 47%) 0%, hsl(263, 41%, 47%)  79%);;
+}
+
+//------------------Projet Componnent-----------------
+.leZ{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    h1{
+        display: flex;
+    }
+}
+Article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    div{
+        display: flex;
+        height: 20%;
+        width: 50%;
+        border: solid;
+        margin: 2px;
+    }
+}
+
+
+//------------------Price Componnent-----------------
+.PriceDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 40vh;
+    width: 100vw;
+    color: $black;
+    div{
+        background-color:yellow ;
+    }
+}
+
+//------------------buuton // hoover-----------------
+button {
+    color: #61dafb;
+    background-color: $green;
+    border: none;
+    &:hover{
+        background-color:$black;
+    }
+}
+//------------------    SVG    -----------------
+svg{
+    height: 8vh;
+    overflow: hidden;
+}
+//------------------Footer-----------------
+footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: $gradeVerViolet;
+}
+h1{
+    background-color: $grade;
+}
+.leZ{
+    height: 50vw;
+    background: $grade1
+}
+.elZ{
+    height: 50vh;
+    background: $gradeVerViolet
+}
+
+
+
+
+
+//------------------logo react animation-----------------
+
+  .App-logo {
+    height: 10vmin;
+    pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
+  }
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

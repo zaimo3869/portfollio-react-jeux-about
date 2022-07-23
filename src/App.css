@@ -1,0 +1,149 @@
+html {
+  background-color: #499f7a;
+}
+
+nav {
+  background: linear-gradient(120deg, #5c00f0 0%, #6c47a9 100%);
+  height: 10vw;
+}
+
+nav button {
+  height: 5vw;
+}
+
+section {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3bb592), color-stop(79%, #6c47a9));
+  background: linear-gradient(to bottom, #3bb592 0%, #6c47a9 79%);
+}
+
+.leZ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leZ h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+Article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+Article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20%;
+  width: 50%;
+  border: solid;
+  margin: 2px;
+}
+
+.PriceDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  height: 40vh;
+  width: 100vw;
+  color: #493b7a;
+}
+
+.PriceDiv div {
+  background-color: yellow;
+}
+
+button {
+  color: #61dafb;
+  background-color: #499f7a;
+  border: none;
+}
+
+button:hover {
+  background-color: #493b7a;
+}
+
+svg {
+  height: 8vh;
+  overflow: hidden;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(10deg, #499f7a 0%, #493b7a 100%);
+}
+
+h1 {
+  background-color: linear-gradient(120deg, #5c00f0 0%, #6c47a9 100%);
+}
+
+.leZ {
+  height: 50vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5c00f0), color-stop(50%, #6c47a9)), #499f7a 100%;
+  background: linear-gradient(to bottom, #5c00f0 0%, #6c47a9 50%), #499f7a 100%;
+}
+
+.elZ {
+  height: 50vh;
+  background: linear-gradient(10deg, #499f7a 0%, #493b7a 100%);
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=app.css.map */

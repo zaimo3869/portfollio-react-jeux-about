@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Montserrat:ital,wght@1,300&family=Oswald:wght@300;400;500&family=Raleway&family=Roboto:wght@100&family=Shrikhand&display=swap');
 
 //------------------Color varible-----------------
 $green:rgb(73, 159, 122);
@@ -24,7 +25,61 @@ nav{
 section{
     background: linear-gradient(to bottom,hsl(163, 51%, 47%) 0%, hsl(263, 41%, 47%)  79%);;
 }
+//------------------About Section-----------------
 
+.banana{
+    font-family: 'Raleway', sans-serif;
+    .aboutSection{
+        background-color: #ffbb98;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        article{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }SPAN{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            justify-content: CENTER;
+            align-items: CENTER;
+            label{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 70vh;
+                input {
+                    width: 70vw;
+                    color: #493b7a;
+                    margin-top: 2%;
+                    opacity: 0;
+                }
+            }
+            .boutonQuizz{
+                display: flex;
+                border: none;
+                width: 80%;
+                justify-content: space-around;
+                align-items: center;
+                height: 7vh;
+                button{
+                    background-color: hsl(10, 20%, 10%);
+                    color: hsl(193, 25%, 68%);
+                    box-shadow: 0px 0px 0 (#499f7a);
+                    width: 20%;
+                }:hover{
+                    transform: translate(4px, -4px);
+                    transition: ease-out;
+                    transition-duration: 0.5s;
+                    box-shadow: -2px 2px 0 (aliceblue);
+                }
+            }
+        }
+       
+    }
+} 
 //------------------Projet Componnent-----------------
 .leZ{
     display: flex;
@@ -72,17 +127,25 @@ button {
         background-color:$black;
     }
 }
-//------------------    SVG    -----------------
-svg{
-    height: 8vh;
-    overflow: hidden;
-}
+
 //------------------Footer-----------------
 footer{
     position: relative;
     width: 100%;
     height: 200px;
     background: $gradeVerViolet;
+    color: aliceblue;
+    
+//------------------    SVG    -----------------
+
+svg{
+    height: 4vh;
+    overflow: hidden;
+    background-color: rgb(33, 117, 191);
+}
+    h3{
+        margin: 0px;
+    }
 }
 h1{
     background-color: $grade;

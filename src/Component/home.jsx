@@ -20,7 +20,7 @@ export default class home extends Component {
         </nav>
         <Counter></Counter>
             <section>
-                <Projet></Projet>
+                {/* <Projet></Projet> */}
                 <div className='leZ'>
                 <h1 style={{margin:"0px"}}> Bouarfa Zaim </h1>
                     Le Z 

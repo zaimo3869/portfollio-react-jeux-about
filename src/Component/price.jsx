@@ -31,10 +31,12 @@ price = () => {
     this.setState({moins:false})
   }
   if(Number(this.state.value) < Number(this.state.Generate)){
+    this.setState({Bravo:false})
     this.setState({plus:true})
     this.setState({moins:false})
   }
   if(Number(this.state.value) > Number(this.state.Generate)){
+    this.setState({Bravo:false})
     this.setState({moins:true})
     this.setState({plus:false})
   }

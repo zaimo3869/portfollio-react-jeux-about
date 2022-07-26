@@ -1,7 +1,7 @@
  
 
  
- import React, { useState,useEffect} from 'react';
+ import React, { useState} from 'react';
 
  const Counter = () => {
    // Déclare une nouvelle variable d'état, que l'on va appeler « count »

@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import Slide from 'react-reveal/Slide';
 
-import Price from './price';
 
 export default class about extends Component {
   render() {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import Imc from './imc'
 import Price from './price';
 

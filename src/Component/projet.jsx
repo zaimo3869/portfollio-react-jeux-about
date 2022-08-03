@@ -1,25 +1,27 @@
 import React from 'react';
 // import Imc from './imc'
 import Price from './price';
+import Footer from './footer'
 
 function projet() {
-
+   
   return (
     <div className="App">
+        <h1 style=
+        {{margin:"0px",
+        display:"flex",
+        justifyContent:"center",
+        backgroundColor:"rgb(70, 69, 69)",
+        color:"white"}}> Bouarfa Zaim 
+         </h1>
         <section>
             <div className='leZ'>
-            <h1 style={{margin:"0px",display:"flex",justifyContent:"center"}}> Bouarfa Zaim </h1>
+            
             <Price></Price>
             </div>
-            <div className='elZ'>
-                <article>
-                    {/* <div><Imc></Imc></div> */}
-                    <div> Banana
-                        <a href='https://cvzaimbouarfa.netlify.app'>https://cvzaimbouarfa.netlify.app</a>
-                    </div>
-                </article>
-            </div>
+            
         </section>
+        <Footer></Footer>
   </div>
   )
 }

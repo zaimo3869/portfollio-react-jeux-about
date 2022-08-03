@@ -17,20 +17,91 @@ html{
 nav{
     background: $grade;
     height: 10vw;
+    background: linear-gradient(120deg, #5c00f0 0%, #6c47a9 100%);
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     button{
         height: 5vw;
     }
 }
-//------------------background-color-----------------
-section{
-    background: linear-gradient(to bottom,hsl(163, 51%, 47%) 0%, hsl(263, 41%, 47%)  79%);;
+//------------------Home -----------------
+IMG{
+    max-height: 90%;
 }
+.containLez{
+    div{
+        WIDTH: 90%;
+    }
+    .leZ{
+        height: 100%;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.leZ{
+    height: 100vh;
+    font-size: smaller;
+    section{
+        background: linear-gradient(to bottom,hsl(163, 51%, 47%) 0%, hsl(263, 41%, 47%)  79%);;
+       
+    } p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 8px;
+            font-size: x-large;
+        }
+        div{
+            width: "-webkit-fill-available"
+        }
+}
+@media  screen and (max-width:400px){
+    .leZ{
+        .containImg{
+            height: 100%;
+            width: "-webkit-fill-available";
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                flex-direction: column;
+            }
+        }
+        p{
+            font-size: medium;
+        }
+    }
+
+}
+@media  screen and (min-width:401px){
+    .leZ{
+        .containImg{
+            height: 100%;
+            margin: 2%;
+            div{
+                flex-direction: column;
+            }
+        }
+        p{
+        font-size: medium;
+        }
+    }
+
+}
+
+
 //------------------About Section-----------------
 
 .banana{
     font-family: 'Raleway', sans-serif;
     .aboutSection{
-        background-color: #ffbb98;
+        background: linear-gradient(to bottom,hsl(163, 51%, 47%) 0%, hsl(263, 41%, 47%)  79%);;;
         justify-content: center;
         display: flex;
         width: 100%;
@@ -39,12 +110,18 @@ section{
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            width: 100%;
         }SPAN{
             display: flex;
             flex-direction: column;
             width: 70%;
             justify-content: CENTER;
             align-items: CENTER;
+            button{
+                background-color: $black;
+                color: white;
+                margin: 2%;
+            }
             label{
                 display: flex;
                 flex-direction: column;
@@ -63,17 +140,17 @@ section{
                 width: 80%;
                 justify-content: space-around;
                 align-items: center;
-                height: 7vh;
                 button{
                     background-color: hsl(10, 20%, 10%);
                     color: hsl(193, 25%, 68%);
                     box-shadow: 0px 0px 0 (#499f7a);
                     width: 20%;
+                    height: 100%;
                 }:hover{
                     transform: translate(4px, -4px);
                     transition: ease-out;
                     transition-duration: 0.5s;
-                    box-shadow: -2px 2px 0 (aliceblue);
+                    box-shadow: -4px 4px 0 (aliceblue);
                 }
             }
         }
@@ -86,6 +163,7 @@ section{
     justify-content: center;
     flex-direction:column;
     h1{
+        font-size: inherit;
         display: flex;
     }
 }
@@ -93,6 +171,7 @@ Article{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    WIDTH: 20%;
     div{
         display: flex;
         height: 20%;
@@ -112,19 +191,37 @@ Article{
     font-size: 1.5rem;
     height: 40vh;
     width: 100vw;
-    color: $black;
-    div{
-        background-color:yellow ;
+    color: aliceblue;
+    .containerMarquee{
+        display: flex;
+        color: aliceblue;
+        align-items: center;
+        overflow: hidden;
+        .marquee{
+            width: 100%;
+            white-space: nowrap;
+            padding: 2%;
+            animation: marquee 5s infinite linear;
+        } 
     }
 }
-
+@keyframes marquee {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 //------------------buuton // hoover-----------------
 button {
-    color: #61dafb;
-    background-color: $green;
+    color: $black;
+    background-color: LIGHTSEAGREEN;
     border: none;
+    border-radius: -22%;
+    width: 22VW;
     &:hover{
-        background-color:$black;
+        background-color:#61dafb;
     }
 }
 
@@ -132,46 +229,44 @@ button {
 footer{
     position: relative;
     width: 100%;
-    height: 200px;
     background: $gradeVerViolet;
     color: aliceblue;
+    height: 20vh;
+    align-items: center;
+    display: FLEX;
+    justify-content: SPACE-AROUND;
     
 //------------------    SVG    -----------------
 
 svg{
     height: 4vh;
     overflow: hidden;
-    background-color: rgb(33, 117, 191);
 }
-    h3{
-        margin: 0px;
-    }
+
+//-------------------eND fOOTEER---------------------------
+
 }
 h1{
     background-color: $grade;
 }
 .leZ{
-    height: 50vw;
+    height: 100vh;
     background: $grade1
 }
 .elZ{
-    height: 50vh;
-    background: $gradeVerViolet
+    height: 20vh;
+    box-shadow: 3px -2px 3px 2px  rgb(70, 69, 69);
+    background: hsl(0, 0%, 14%)
 }
-
-
-
-
 
 //------------------logo react animation-----------------
 
-  .App-logo {
+.App-logo {
     height: 10vmin;
     pointer-events: none;
     animation: App-logo-spin infinite 20s linear;
   }
-  
-  
+
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);
@@ -180,4 +275,24 @@ h1{
       transform: rotate(360deg);
     }
   }
-  
+
+  @media screen and (max-width:830px ) and (min-width:651px){
+    .boutonQuizz{
+        display: flex;
+        border: none;
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+        height: fit-content;
+    }
+  }
+  @media screen and (max-width:650px){
+    .banana .aboutSection SPAN .boutonQuizz{
+        display: flex;
+        border: none;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: fit-content;
+    }
+  }

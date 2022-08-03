@@ -9,12 +9,13 @@
    const [reveal,setReveal] = useState(Math.floor(Math.random()*( 10 - 1 + 1) + 1 ))
    
    if (count === reveal) {
-    alert( " vous avez trouvez : "+ reveal)
+    
+    window.confirm("Compteur utile ?") 
    }
    
    return (
     <div onClick={() => setReveal(reveal)}>
-      <h2>Cliquez le nombre de fois qu'il faut et découvrez le reste ...</h2>
+      <h2>Cliquez le nombre de fois qu'il faut ...</h2>
        <p>Vous avez cliqué {count} fois</p>
        <button style={{border:"solid"}} onClick={() => setCount(count + 1) }>
          Cliquez ici

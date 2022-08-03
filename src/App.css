@@ -6,15 +6,116 @@ html {
 nav {
   background: linear-gradient(120deg, #5c00f0 0%, #6c47a9 100%);
   height: 10vw;
+  background: linear-gradient(120deg, #5c00f0 0%, #6c47a9 100%);
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 nav button {
   height: 5vw;
 }
 
-section {
+IMG {
+  max-height: 90%;
+}
+
+.containLez div {
+  WIDTH: 90%;
+}
+
+.containLez .leZ {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leZ {
+  height: 100vh;
+  font-size: smaller;
+}
+
+.leZ section {
   background: -webkit-gradient(linear, left top, left bottom, from(#3bb592), color-stop(79%, #6c47a9));
   background: linear-gradient(to bottom, #3bb592 0%, #6c47a9 79%);
+}
+
+.leZ p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin: 8px;
+  font-size: x-large;
+}
+
+.leZ div {
+  width: "-webkit-fill-available";
+}
+
+@media screen and (max-width: 400px) {
+  .leZ .containImg {
+    height: 100%;
+    width: "-webkit-fill-available";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .leZ .containImg div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leZ p {
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .leZ .containImg {
+    height: 100%;
+    margin: 2%;
+  }
+  .leZ .containImg div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leZ p {
+    font-size: medium;
+  }
 }
 
 .banana {
@@ -22,7 +123,8 @@ section {
 }
 
 .banana .aboutSection {
-  background-color: #ffbb98;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3bb592), color-stop(79%, #6c47a9));
+  background: linear-gradient(to bottom, #3bb592 0%, #6c47a9 79%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -47,6 +149,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .banana .aboutSection SPAN {
@@ -64,6 +167,12 @@ section {
   -webkit-box-align: CENTER;
       -ms-flex-align: CENTER;
           align-items: CENTER;
+}
+
+.banana .aboutSection SPAN button {
+  background-color: #493b7a;
+  color: white;
+  margin: 2%;
 }
 
 .banana .aboutSection SPAN label {
@@ -98,7 +207,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 7vh;
 }
 
 .banana .aboutSection SPAN .boutonQuizz button {
@@ -107,6 +215,7 @@ section {
   -webkit-box-shadow: 0px 0px 0 #499f7a;
           box-shadow: 0px 0px 0 #499f7a;
   width: 20%;
+  height: 100%;
 }
 
 .banana .aboutSection SPAN .boutonQuizz :hover {
@@ -116,8 +225,8 @@ section {
   transition: ease-out;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  -webkit-box-shadow: -2px 2px 0 aliceblue;
-          box-shadow: -2px 2px 0 aliceblue;
+  -webkit-box-shadow: -4px 4px 0 aliceblue;
+          box-shadow: -4px 4px 0 aliceblue;
 }
 
 .leZ {
@@ -134,6 +243,7 @@ section {
 }
 
 .leZ h1 {
+  font-size: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,6 +259,7 @@ Article {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  WIDTH: 20%;
 }
 
 Article div {
@@ -178,39 +289,80 @@ Article div {
   font-size: 1.5rem;
   height: 40vh;
   width: 100vw;
-  color: #493b7a;
+  color: aliceblue;
 }
 
-.PriceDiv div {
-  background-color: yellow;
+.PriceDiv .containerMarquee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: aliceblue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.PriceDiv .containerMarquee .marquee {
+  width: 100%;
+  white-space: nowrap;
+  padding: 2%;
+  -webkit-animation: marquee 5s infinite linear;
+          animation: marquee 5s infinite linear;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 button {
-  color: #61dafb;
-  background-color: #499f7a;
+  color: #493b7a;
+  background-color: LIGHTSEAGREEN;
   border: none;
+  border-radius: -22%;
+  width: 22VW;
 }
 
 button:hover {
-  background-color: #493b7a;
+  background-color: #61dafb;
 }
 
 footer {
   position: relative;
   width: 100%;
-  height: 200px;
   background: linear-gradient(10deg, #499f7a 0%, #493b7a 100%);
   color: aliceblue;
+  height: 20vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: FLEX;
+  -webkit-box-pack: SPACE-AROUND;
+      -ms-flex-pack: SPACE-AROUND;
+          justify-content: SPACE-AROUND;
 }
 
 footer svg {
   height: 4vh;
   overflow: hidden;
-  background-color: #2175bf;
-}
-
-footer h3 {
-  margin: 0px;
 }
 
 h1 {
@@ -218,14 +370,16 @@ h1 {
 }
 
 .leZ {
-  height: 50vw;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#5c00f0), color-stop(50%, #6c47a9)), #499f7a 100%;
   background: linear-gradient(to bottom, #5c00f0 0%, #6c47a9 50%), #499f7a 100%;
 }
 
 .elZ {
-  height: 50vh;
-  background: linear-gradient(10deg, #499f7a 0%, #493b7a 100%);
+  height: 20vh;
+  -webkit-box-shadow: 3px -2px 3px 2px #464545;
+          box-shadow: 3px -2px 3px 2px #464545;
+  background: #242424;
 }
 
 .App-logo {
@@ -254,6 +408,42 @@ h1 {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 830px) and (min-width: 651px) {
+  .boutonQuizz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .banana .aboutSection SPAN .boutonQuizz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Counter from './compteur';
 
 export class price extends Component {
   constructor(props) {
@@ -57,17 +58,25 @@ return generateNumber
     const priceValue  = this.state
     return (
       <div className='PriceDiv'>
-      
+      <div className='containerMarquee'>
+        <div className='marquee'>Clique sur jouer </div>
+      </div>
       <h1>Quelle est le juste Prix ???</h1>
-      <button onClick={this.numberGenerator}>Generate</button>
+      
+      <button onClick={this.numberGenerator}>Jouer</button>
       
       {priceValue.plus && <span>👆 C'est plus </span> }
       {priceValue.Bravo &&  <span>🔥🔥🔥 Bravo🔥🔥🔥</span> }
-      {priceValue.hide &&  <span><form onSubmit={this.handleSubmit}>
+      {priceValue.hide &&  
+      <span>
+        <p>Le prix est entre 1 et 100 </p>
+        <form onSubmit={this.handleSubmit}>
       <input name='price' value={this.state.price} onChange={this.handleChange} type="number" placeholder='Ecris ton prix ' />
       <button onClick={() => this.price()}> Valider</button>
      
-      </form> {priceValue.moins &&  <span>👇 C'est moins </span> }</span> }
+      </form> {priceValue.moins &&  <span>👇 C'est moins </span> }
+      </span> }
+<Counter></Counter>
 
       </div>
     )

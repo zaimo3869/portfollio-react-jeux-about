@@ -14,8 +14,8 @@
    }
    
    return (
-    <div onClick={() => setReveal(reveal)}>
-      <h2>Cliquez le nombre de fois qu'il faut ...</h2>
+    <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",margin:"2%"}} onClick={() => setReveal(reveal)}>
+      <h2 style={{fontSize:"medium"}}>Cliquez le nombre de fois qu'il faut ...</h2>
        <p>Vous avez cliqué {count} fois</p>
        <button style={{border:"solid"}} onClick={() => setCount(count + 1) }>
          Cliquez ici

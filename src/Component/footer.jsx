@@ -5,7 +5,7 @@ import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 export default function footer() {
   return (
     <footer>        
-    <p onClick={()=> {document.location.pathname='/home'}}> Home</p>
+    <p onClick={()=> {document.location.pathname='/'}}> Home</p>
     <p onClick={()=> {document.location.pathname='/projets'}}> Projet</p>
     <p onClick={()=> {document.location.pathname='/about'}}> About</p>
 

@@ -26,6 +26,7 @@ export default class home extends Component {
             
             <button onClick={this.redirectProj}>Projets</button>
             <button onClick={this.redirect}>About</button>
+            
         </nav>
         
             <section className='containLez'>
@@ -37,32 +38,35 @@ export default class home extends Component {
                     </p>
 
                     <div className='containImg'>
-                        <div 
+                        <a href='https://zaimo3869.github.io/site-reservia/'><div 
                         style={{display: "flex",margin:"5px",height:"10%",justifyContent: "center"}}>
                         {/* <p>J'ai réalisé une maquette et intégrées celle-ci via HTML et CSS. 
                         J'ai appris ce qu'était le seo et les méthodes qu'ils existait</p>  */}
 
-                        <img style={{margin: "2%"}} src={reserviaDesktop} alt="ohmyfoodMobile" />
-                        </div>
-                        <div 
+                        <img style={{margin: "2%"}} src={reserviaDesktop} alt="reservia" />
+                        </div></a>
+
+                        <a href='https://zaimo3869.github.io/ZaimBouarfa_oh-my-foodwow/'><div 
                         style={{display: "flex",margin:"5px",height:"10%",justifyContent: "center"}}>
                         <img style={{margin: "2%"}} src={ohmyfoodDesktop} alt="ohmyfoodMobile" />
-                        </div>
-                        <div 
-                        style={{display: "flex",margin:"5px",justifyContent: "center",height:"20vh"}}> 
+                        </div></a>
+
+                        <a href='https://github.com/zaimo3869/javascript_API/tree/main/front/js1'><div 
+                        style={{display: "flex",margin:"5px",justifyContent: "center",height:"10%"}}> 
                          {/* <p>J'ai découvert JavaScript en créant des interactions avec un back-end.</p>  */}
                         <img style={{margin: "2%"}} src={kanap} alt="kanap" />
-                        </div>
-                        <div 
+                        </div></a>
+                        
+                        <a href="https://github.com/zaimo3869/API-rest-piquante"><div 
                         style={{display: "flex",margin:"5px",height:"10%",justifyContent: "center"}}>
                          {/* <p>J'ai créé une API Rest qui devait s’implémenter avec le front-end. (node.js)</p>  */}
-                        <img style={{margin: "2%"}} src={piquante} alt="ohmyfoodMobile" />
-                        </div>
-                        <div 
+                        <img style={{margin: "2%"}} src={piquante} alt="piquante" />
+                        </div></a>
+                        <a href='https://github.com/zaimo3869/Groupomania-Backend'><div 
                         style={{display: "flex",margin:"5px",height:"10%",justifyContent: "center"}}>
                             {/* <p>Et pour finir ma formation j'ai créé le front-end et le back-end d’un réseau social d'entreprise.</p>  */}
-                        <img style={{ margin: "2%"}} src={groupomania} alt="ohmyfoodMobile" />
-                        </div>
+                        <img style={{ margin: "2%"}} src={groupomania} alt="groupomania" />
+                        </div></a>
                         </div>
 
                         
